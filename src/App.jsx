@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-
+import { base } from 'vite'
 const NAV = [
   { id: 'about', label: '单位介绍' },
   { id: 'isf', label: 'ISF 诊断系统' },
@@ -131,7 +131,7 @@ function App() {
             </div>
           </div>
           <div className="isf-hero-image">
-            <img src="/screenshots/01-主页全貌.png" alt="ISF V6 主页" />
+            <img src={`${base}screenshots/01-主页全貌.png`} alt="ISF V6 主页" />
           </div>
         </div>
 
@@ -184,12 +184,12 @@ function App() {
 
         <h4 style={{fontSize:17,fontWeight:700,color:'var(--fg)',marginBottom:20,textAlign:'center'}}>系统界面展示</h4>
         <div className="img-grid img-grid-3">
-          <div><div className="img-item"><img src="/screenshots/02-诊断详情弹窗.png" alt="诊断详情"/></div><div className="img-caption">诊断详情弹窗</div></div>
-          <div><div className="img-item"><img src="/screenshots/04-周期对比炉压.png" alt="周期对比"/></div><div className="img-caption">多周期炉压轨迹对比</div></div>
-          <div><div className="img-item"><img src="/screenshots/05-综合炉况指数.png" alt="综合炉况"/></div><div className="img-caption">综合炉况指数（只降不升）</div></div>
-          <div><div className="img-item"><img src="/screenshots/06-异常密度.png" alt="异常密度"/></div><div className="img-caption">异常密度分布</div></div>
-          <div><div className="img-item"><img src="/screenshots/07-历史查询筛选.png" alt="历史查询"/></div><div className="img-caption">历史查询筛选</div></div>
-          <div><div className="img-item"><img src="/screenshots/08-参数配置.png" alt="参数配置"/></div><div className="img-caption">实时参数配置</div></div>
+          <div><div className="img-item"><img src={`${base}screenshots/02-诊断详情弹窗.png`} alt="诊断详情"/></div><div className="img-caption">诊断详情弹窗</div></div>
+          <div><div className="img-item"><img src={`${base}screenshots/04-周期对比炉压.png`} alt="周期对比"/></div><div className="img-caption">多周期炉压轨迹对比</div></div>
+          <div><div className="img-item"><img src={`${base}screenshots/05-综合炉况指数.png`} alt="综合炉况"/></div><div className="img-caption">综合炉况指数（只降不升）</div></div>
+          <div><div className="img-item"><img src={`${base}screenshots/06-异常密度.png`} alt="异常密度"/></div><div className="img-caption">异常密度分布</div></div>
+          <div><div className="img-item"><img src={`${base}screenshots/07-历史查询筛选.png`} alt="历史查询"/></div><div className="img-caption">历史查询筛选</div></div>
+          <div><div className="img-item"><img src={`${base}screenshots/08-参数配置.png`} alt="参数配置"/></div><div className="img-caption">实时参数配置</div></div>
         </div>
       </div>
     </section>
